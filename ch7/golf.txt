@@ -1,0 +1,4 @@
+Allen              -5
+Marcus             10
+Lopen              -1
+Damen              10

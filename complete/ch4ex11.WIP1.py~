@@ -1,0 +1,22 @@
+def main():
+	seconds = float(input("Enter a number of seconds, please.\n"))
+	days = seconds//86400
+	seconds -= days*86400
+	hours = seconds//3600
+	seconds -= hours*3600
+	minutes = seconds//60
+	seconds -= seconds
+	
+	print("Days", days,"Hours",hours,"Minutes",minutes,"Seconds",seconds)
+	time = "The caculated time is "
+	if days:
+		time += str(days) + " day(s) "
+	if hours:
+		time += str(hours) + " hour(s) "
+	if minutes:
+		time += str(minutes) + " minute(s) "
+	if seconds:
+		time += str(seconds) + " second(s)"
+
+	print(time)
+main()
